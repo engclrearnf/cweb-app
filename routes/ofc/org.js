@@ -9,12 +9,15 @@ router.use(express.json());
 router.post("/addorg", async (req, res) => {
   const json = req.body;
 
-  try {
-    const org = await db.addOrg(json);
-    res.send(org);
-  } catch (e) {
-    console.log(e);
-  }
+  const org = await db.addOrg(json);
+  res.send(org);
+});
+
+router.post("/delorg", async (req, res) => {
+  const json = req.body;
+
+  const org = await db.delOrg(json);
+  res.send(org);
 });
 
 module.exports = router;

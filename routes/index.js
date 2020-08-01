@@ -1,8 +1,7 @@
 const router = require("express").Router();
 
-router.use("/", (req, res, next) => {
-  //res.send("Hello world.");
-  next();
+router.get("/", (req, res) => {
+  res.send("Hello world.");
 });
 
 router.use("/ofc", require("./ofc"));
