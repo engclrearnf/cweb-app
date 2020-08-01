@@ -1,7 +1,7 @@
 {
   "name": "cweb-app",
-  "version": "0.0.1",
-  "description": "ofc application",
+  "version": "0.0.2",
+  "description": "web-app application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,15 @@
   "keywords": [
     "cweb"
   ],
-  "author": "clrearn",
-  "license": "ISC",
+  "author": {
+    "name": "engclrearnf",
+    "email": "16915931@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/engclrearnf/cweb-app.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "config": "^3.3.1",
     "debug": "^4.1.1",
